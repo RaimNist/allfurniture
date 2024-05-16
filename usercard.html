@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Пример блочной верстки</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/reset.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-inner">
+                <a href="#" class="logo"><img src="images/logo.svg" alt="" class="logo-img"></a>
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-list-item"><a href="index.html" class="header-menu-list-link menu-list-link--active">главная</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">Избранное</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">Корзина</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">вход</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        
+        <div id="container">
+            <div class="user-card">
+                <div class="user-card-name">Введите данные для оформления бонусной карты</div>
+                <div class="user-card-firstname">Ваше имя<br><input type="text" id="user-card-firstname-input" onChange="this.value=this.value.toUpperCase()"></div>
+                <div class="user-card-secondname">Ваша фамилия<br><input type="text" id="user-card-secondname-input" onChange="this.value=this.value.toUpperCase()"></div>
+                <div class="user-card-phonenumber">Номер телефона<br><input type="text" id="user-card-phonenumber-input" maxlength="12" value="+7"></div>
+                <div class="user-card-old">Ваш возраст<br><input type="text" id="age" required></div>
+                <div class="user-card-buttons">
+                    <button class="user-card-submit-btn" onclick="submitForm();  checkAge();">Отправить</button>
+                    <button class="user-card-reset-btn" onclick="resetForm()">Очистить</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="footer">
+            <nav class="footer__menu">
+                    
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-list-item"><a href="https://vk.com/etovladick" class="footer__menu-list-link">made by @etovladic</a></li>
+                </ul>
+                
+                <ul class="footer__menu-list-2">
+                    <li class="footer__menu-list-item">+7 (928) 432-56-38</li>
+                    <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-link">iryvbpib@mail.ru</a></li>
+                </ul>
+                
+                <a href="index.html" class="logo"><img src="pictures/logo.svg" alt="" class="logo__img"></a>
+            </nav>
+        </div>
+
+        <dialog id="dialog">
+            <h1 class="dialog-name">Ваша бонусная карта</h1>
+            <div class="dialog-content">
+                <p class="dialog-username">Имя: <h1 id="get-name"></h1></p>
+                <p class="dialog-secondname">Фамилия:<h1 id="get-secondname"></h1></p>
+                <p class="dialog-username">Номер карты: <h1 id="get-cardnum"></h1></p>
+            </div>
+            <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+        </dialog> 
+
+        <script>
+            function submitForm() {
+            
+                const randomNumber = Math.ceil(Math.random()*99999999);
+            
+                const name = document.getElementById('user-card-firstname-input').value;
+                document.getElementById('get-name').textContent = name;
+
+                const fam = document.getElementById('user-card-secondname-input').value;
+                document.getElementById('get-secondname').textContent = fam;
+
+                const num = randomNumber;
+                document.getElementById('get-cardnum').textContent = num;
+            }
+            
+            function checkAge() {
+            var age = document.getElementById('age').value;
+
+            if (age < 18) {
+                alert("Карта выдается только после 18 лет");
+                return;
+            }
+            else  window.dialog.showModal();
+            
+            }
+            
+            
+            
+
+            function resetForm() {
+            document.getElementById('user-card-secondname-input').value = '';
+            document.getElementById('user-card-firstname-input').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('user-card-phonenumber-input').value = '+7';
+            }
+        </script>
+    </body>
+</html>

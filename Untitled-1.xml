@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style/style.css"?>
+<MAGAZIN>
+    <tovar>
+        <id>1</id>
+        <NAME>Тренчик для ремня</NAME>
+        <razmer> 40 мм </razmer>
+        <material>Латунь</material>
+        <cena>220 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+    <tovar>
+        <id>2</id>
+        <NAME>Фастекс пластиковый</NAME>
+        <razmer> 20 мм </razmer>
+        <material>Черный</material>
+        <cena>18 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>3</id>
+        <NAME>Внутренний гибкий замок Пак-пак</NAME>
+        <razmer> 12 см</razmer>
+        <material>Антик</material>
+        <cena>120 рублей</cena>
+        <nalichie>Под заказ</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>4</id>
+        <NAME>Каркас внутренний плоский</NAME>
+        <razmer> 12 см</razmer>
+        <material>Стальной</material>
+        <cena>400 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>5</id>
+        <NAME>Замок Рамочный</NAME>
+        <razmer> 22 см </razmer>
+        <material>Антик</material>
+        <cena>1500 рублей</cena>
+        <nalichie>Под заказ</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>6</id>
+        <NAME>Цепь акриловая</NAME>
+        <razmer> 60 см </razmer>
+        <material>Черный</material>
+        <cena>300 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>7</id>
+        <NAME>Ременная заготовка</NAME>
+        <razmer> 40 мм(120 см) </razmer>
+        <material>Красный Лофт+плита Тигин</material>
+        <cena>600 рублей</cena>
+        <nalichie>Под заказ</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>8</id>
+        <NAME>Ремень через плечо</NAME>
+        <razmer> 50 мм </razmer>
+        <material>Блэк Никель</material>
+        <cena>450 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>9</id>
+        <NAME>Пряжка для ремня L140</NAME>
+        <razmer> 40 мм </razmer>
+        <material>Латунь</material>
+        <cena>680 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>10</id>
+        <NAME>Кончо на кнопке</NAME>
+        <razmer> 20 мм </razmer>
+        <material>Красный, Антик</material>
+        <cena>90 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>11</id>
+        <NAME>Застежка на магнитной кнопке</NAME>
+        <razmer> 30 мм </razmer>
+        <material>Золото</material>
+        <cena>150 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>12</id>
+        <NAME>Ограничитель для молнии нижний</NAME>
+        <razmer> 5 мм </razmer>
+        <material>Никель</material>
+        <cena>12 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>13</id>
+        <NAME>Нитки вощеные</NAME>
+        <razmer> 0.8 мм(78 м) </razmer>
+        <material>Бежевые</material>
+        <cena>350 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>14</id>
+        <NAME>Цепь металлическая</NAME>
+        <razmer> 120 см </razmer>
+        <material>Золото</material>
+        <cena>390 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>15</id>
+        <NAME>Молния металлическая</NAME>
+        <razmer> 1 м </razmer>
+        <material>Серый, Никель</material>
+        <cena>290</cena>
+        <nalichie>в наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>16</id>
+        <NAME>Бегунок на металлическую молнию</NAME>
+        <razmer> 50 мм </razmer>
+        <material>Блэк Никель</material>
+        <cena>75 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>17</id>
+        <NAME>Молния пластиковая</NAME>
+        <razmer> 1 м </razmer>
+        <material>Белый</material>
+        <cena>24 рубля</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>18</id>
+        <NAME>Ручкодержатель</NAME>
+        <razmer> 10 мм </razmer>
+        <material>Никель</material>
+        <cena>140 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>19</id>
+        <NAME>Хольнитены двухсторонние</NAME>
+        <razmer> 4,5 х 2 мм </razmer>
+        <material>Никель</material>
+        <cena>2 рубля</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+
+    <tovar>
+        <id>20</id>
+        <NAME>Скоба L28</NAME>
+        <razmer> 40 мм </razmer>
+        <material>Латунь</material>
+        <cena>170 рублей</cena>
+        <nalichie>В наличии</nalichie>
+    </tovar>
+</MAGAZIN>

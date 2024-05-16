@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Тренчик для ремня</title>
+        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="stylesheet" href="../style/reset.css">
+    </head>
+    <body>
+        
+        <div id="header">
+            <div class="header-inner">
+                <a href="#" class="logo"><img src="../images/logo.svg" alt="" class="logo-img"></a>
+                <div class="add-banner">
+                    Реклама
+                </div>
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-list-item"><a href="index.html" class="header-menu-list-link menu-list-link--active">главная</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">Избранное</a></li>
+                        <li class="header-menu-list-item"><a href="buy.html" class="header-menu-list-link">Корзина</a></li>
+                        <li class="header-menu-list-item"><a href="Untitled-1.xml" class="header-menu-list-link">Прайс лист</a></li>
+                        <li class="header-menu-list-item"><a href="#" class="header-menu-list-link">регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        
+        
+        <div id="container">
+            <div class="preview">
+                <nav class="gallery">
+                    <ul class="gallery-list">
+                        <li class="gallery-list-item">
+                            <button class="gallery-list-btn" onclick="photo.src = '../images/Безымянный-1.jpg'">
+                                <img src="../images/Тренчик-галлерея-1.jpg" alt="" class="gallery-list-photo">
+                            </button>
+                        </li>
+                        <li class="gallery-list-item">
+                            <button class="gallery-list-btn" onclick="photo.src = '../images/Тренчик-главное-фото-2.jpg'">
+                                <img src="../images/Тренчик-галлерея-2.jpg" alt="" class="gallery-list-photo">
+                            </button>
+                        </li>
+                        <li class="gallery-list-item">
+                            <button class="gallery-list-btn" onclick="photo.src = '../images/Тренчик-главное-фото-3.jpg'">
+                                <img src="../images/Тренчик-галлерея-3.jpg" alt="" class="gallery-list-photo">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="preview-photo">
+                    <img src="../images/Безымянный-1.jpg" alt="" id="photo">
+                </div>
+
+                <div class="product-info">
+                    <div class="product-name">Тренчик для ремня</div>
+                    <div class="product-price">220 рублей</div>
+                    <ul class="product-buttons">
+                        <li class="product-buy">
+                            <button id="product-buy-btn" onclick="changeBg()">В корзину</button>
+                        </li>
+                        <li class="product-like">
+                            <button class="product-like-btn" onclick="likeimg.src = '../images/Fill=yes1.png'; changeCol()" > 
+                                <ul class="product-like-list">
+                                    <li class="product-like-item"><img src="../images/Fill=no.png" alt="" id="likeimg"></li>
+                                    <li id="col" class="product-like-item">29</li>
+                                </ul>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <nav class="accent-block">
+                        <ul class="accent-block-list">
+                            <li class="accent-block-list">
+                                <a href="#" onclick="window.dialog.showModal();">Оставить отзыв о товаре</a>
+                            </li>
+                            <hr class="hr-line">
+                            <li class="accent-block-list">В наличии 40 шт.</li>
+                            <hr class="hr-line">
+                            <li class="accent-block-list">Продано более 100 шт.</li>
+                        </ul>
+                    </nav>
+
+                    <div class="description-block">
+                        <div class="description-name">
+                            Описание
+                        </div>
+                        <div class="description">
+                            Тренчик 40 мм латунь <br>
+                            Материал латунь <br>
+                            Внутренний размер 40 х 15 мм
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div id="footer">
+            <nav class="footer__menu">
+                    
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-list-item"><a href="https://vk.com/etovladick" class="footer__menu-list-link">made by @etovladic</a></li>
+                </ul>
+                
+                <ul class="footer__menu-list-2">
+                    <li class="footer__menu-list-item">+7 (928) 432-56-38</li>
+                    <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-link">iryvbpib@mail.ru</a></li>
+                </ul>
+                
+                <a href="index.html" class="logo"><img src="pictures/logo.svg" alt="" class="logo__img"></a>
+            </nav>
+        </div>
+
+        <dialog id="dialog">
+            <h1 class="dialog-name">Оставьте отзыв о товаре</h1>
+            <div class="dialog-content">
+                <p class="dialog-username">Ваше имя<br><input type="text" class="dialog-username-input" size="40" placeholder="Имя"></p>
+                <p class="dialog-email">Ваш e-mail<br><input type="email" class="dialog-email-input" size="40" placeholder="yuormail@gmail.com"></p>
+                <p class="dialog-text">Отзыв<br><textarea class="dialog-text-input" cols="38" rows="10"></textarea></p>
+                <div class="estimation"><h1 class="estimation-name">Оцените товар</h1>
+                    <div class="estimation-stars">
+                        
+                        <!-- <img src="../images/Fill=no (3).png" alt="" class="estimation-icon" id="star1" 
+                            onclick="this.src='../images/Fill=yes2.png'">
+                        
+                   
+                    
+                        <img src="../images/Fill=no (3).png" alt="" class="estimation-icon" id="star2" 
+                            onclick="this.src='../images/Fill=yes2.png'; 
+                                star1.src='../images/Fill=yes2.png'">
+                        
+                   
+                    
+                        <img src="../images/Fill=no (3).png" alt="" class="estimation-icon" id="star3" 
+                        onclick="this.src='../images/Fill=yes2.png'; 
+                            star1.src='../images/Fill=yes2.png'; 
+                            star2.src='../images/Fill=yes2.png'">
+                        
+                   
+                    
+                        <img src="../images/Fill=no (3).png" alt="" class="estimation-icon" id="star4" 
+                        onclick="this.src='../images/Fill=yes2.png'; 
+                            star1.src='../images/Fill=yes2.png'; 
+                            star2.src='../images/Fill=yes2.png'; 
+                            star3.src='../images/Fill=yes2.png'">
+                        
+                   
+                    
+                        <img src="../images/Fill=no (3).png" alt="" class="estimation-icon" id="star5" 
+                        onclick="this.src='../images/Fill=yes2.png'; 
+                            star1.src='../images/Fill=yes2.png'; 
+                            star2.src='../images/Fill=yes2.png'; 
+                            star3.src='../images/Fill=yes2.png'; 
+                            star4.src='../images/Fill=yes2.png'"> -->
+                        
+                        <div id="rating_bar" style="cursor:pointer">
+                            <span id="rate_1">&#9734;</span>
+                            <span id="rate_2">&#9734;</span>
+                            <span id="rate_3">&#9734;</span>
+                            <span id="rate_4">&#9734;</span>
+                            <span id="rate_5">&#9734;</span>
+                        </div>
+                                
+                    </div>
+                    
+            </div>
+            <button class="submit-estimation" onclick="window.dialog.close();">Отправить отзыв</button>
+            <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+        </dialog> 
+
+        <script>
+            function changeBg(){
+                document.querySelector("#product-buy-btn").style.background = "#151515";
+                document.querySelector("#product-buy-btn").style.color = "#fff";
+                document.getElementById('product-buy-btn').innerHTML="Товар в корзине";
+            }
+            function changeCol()
+            {
+                document.getElementById('col').innerHTML="30";
+            }
+
+
+
+            let spans = document.getElementById("rating_bar")
+            .getElementsByTagName('span');
+            
+            for(i=0;i<spans.length;i++)
+            
+                spans[i].onmouseover=hoverStar;
+             
+            function hoverStar()
+            {
+                for(i=0;i<this.id.charAt(5);i++)
+                spans[i].innerText='★';
+            
+                for(i=this.id.charAt(5);i<5;i++)
+                spans[i].innerText='☆';
+            }
+
+        </script> 
+
+    </body>
+</html>
